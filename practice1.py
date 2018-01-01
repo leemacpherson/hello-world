@@ -9,3 +9,7 @@ print (B.issubset(A))
 print (A.issuperset(B))
 
 print (B.issuperset(A))
+
+print(type(A))
+
+print ("dir is ", dir(A))
