@@ -6,4 +6,4 @@ print ("The radius of the circle is ", my_circle.radius)
 
 print ("The area of the circle is ", format(my_circle.get_area(), ".3f"))
 
-print ("The area formatted as an integer is ", format(int(my_circle.get_area()), "4d"))
+print ("The area formatted as an integer is ", format(int(my_circle.get_area()), "3d"))
