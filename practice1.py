@@ -13,3 +13,9 @@ print (B.issuperset(A))
 print(type(A))
 
 print ("dir is ", dir(A))
+
+# practice with a for loop
+
+for i in range (1,44,3):
+  print ("\ni is ", i, end = " ")
+  
