@@ -1,3 +1,5 @@
+#   2018,  Lee MacPherson,  leemacpherson@msn.com
+
 # this program takes the list of hex characters and adds them
 # then negates each bit in the binary representation, then adds one to the result
 # The binary value is then converted to hex and this is what is returned
@@ -83,6 +85,3 @@ plus_one = num + 1
 
 #print the hex representation of the integer
 print ("\nThe checksum is : ", hex(plus_one))
-
-
-
