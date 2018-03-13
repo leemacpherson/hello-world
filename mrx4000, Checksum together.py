@@ -9,6 +9,7 @@
 
 # make a list to store all of the values that have to be added
 
+
 import random
 
 def decmial2bin(decimal_sum):
