@@ -9,31 +9,37 @@
 
 def chksum_gen (hex_lst):
 
-
 #print the hex list that got passed to this funtion
     print ("the list that was passed to this function is : ", hex_lst)
 
 #declare the list that will hold the decimal equivalent of all of the hex values
-    dec_list = []
+    dec_lst = []
     i= 0
     print ("the length of hex_list is : ", len(hex_lst))
-    while i  < (len(hex_lst)-1):
-        dec_list[i] = int(hex_lst[i], 16)
-        i -= 1
+    
+# go through each element and build the list of decimal (base  10) values
+    for i  in hex_lst:
+        print("i is : ", i)
+        print("dec_lst is ", dec_lst)
+        dec_lst[i] = int(hex_lst[i], 16)
+        print("hex_lst is ", hex_lst)
+        print("dec_lst is ", dec_lst)
+        i += 1
         #dec_value = int(hex_value, 16)
 
-    print ("the list of decimal equivalents is : ", dec_list)
+    print ("the list of decimal equivalents is : ", dec_lst)
 
 # calculate the sum of all of the elements, then print the decimal value
 
-    dec_sum = sum(dec_list)
+    print(" all of the values have been entered")
+    dec_sum = sum(dec_lst)
     print("the sum is: ", dec_sum)
 
 # convert the decimal value to a binary value
-    bin_sum = bin(decimal_sum)
+    bin_sum = bin(dec_sum)
     print("the binary value is : ", bin_sum)
   
-# use string operators to flip each bit in the binary number (can;t get negation to work)
+# use string operators to flip each bit in the binary number (can't get negation to work)
 
     length = len(bin_sum)
 #print ("the length of bin_sum is ", length)
@@ -76,8 +82,9 @@ def chksum_gen (hex_lst):
     plus_one = num + 1
 #print (plus_one)
 
-#print the hex representation of the integer
+#print the hex representation of the integer, then return the value to the calling function
     print ("\nThe checksum is : ", hex(plus_one))
-
+    return hex(plus_one)
+    
 
 

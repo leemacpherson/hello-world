@@ -21,8 +21,16 @@ while hex_value != "":
        
 print ("the list of hex pairs is : ", hex_list)
 
+# remove the quotation character.  pop([index])removes the element at the specified index and returns that element. If index is not specified, it removes and returns last element from the list.
+hex_list.pop()
+
 # pass the list of hex pairs as an argument to the module "checksum_generator"
 
 checksum_generator.chksum_gen (hex_list)
 
+#indicate that you have had the checksum returned from the module checksum_generator
+
+print ("the 'checksum_generator' module has returned back to 'mrx4000_Commands")
+
+#print ("checksum is : ", checksum_generator.chksum_gen())
 

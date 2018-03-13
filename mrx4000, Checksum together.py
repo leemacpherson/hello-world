@@ -41,7 +41,7 @@ print("the sum is: ", dec_sum)
 bin_sum = decmial2bin(dec_sum)
 #print("the binary value is : ", bin_sum)
   
-# use string operators to flip each bit in the binary number (can;t get negation to work)
+# use string operators to flip each bit in the binary number (can't get negation to work)
 
 length = len(bin_sum)
 #print ("the length of bin_sum is ", length)
