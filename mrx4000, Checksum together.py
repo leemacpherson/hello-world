@@ -18,7 +18,7 @@ def decmial2bin(decimal_sum):
         
 #set the first element of the list to 25 (hex 0x19) which always is used in every checksum
 dec_list = [25]
-hex_value = int("0")
+hex_value = 0
 
 while hex_value != "":
         # change the hex value to decimal so the addition goes correctly
