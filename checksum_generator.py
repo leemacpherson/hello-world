@@ -13,21 +13,18 @@ def chksum_gen (hex_lst):
     print ("the list that was passed to this function is : ", hex_lst)
 
 #declare the list that will hold the decimal equivalent of all of the hex values
-    dec_lst = []
-    i= 0
-    print ("the length of hex_list is : ", len(hex_lst))
+    dec_lst = [25]
     
-# go through each element and build the list of decimal (base  10) values
-    for i  in hex_lst:
-        print("i is : ", i)
-        print("dec_lst is ", dec_lst)
-        dec_lst[i] = int(hex_lst[i], 16)
-        print("hex_lst is ", hex_lst)
-        print("dec_lst is ", dec_lst)
-        i += 1
-        #dec_value = int(hex_value, 16)
+#method 1 to convert each string in the hex_lst list to integers
+
+    dec_lst = [int(i) for i in hex_lst]
 
     print ("the list of decimal equivalents is : ", dec_lst)
+
+#method 2 to convert each string in the hex_lst list to integers
+
+    hex_value = 0
+    
 
 # calculate the sum of all of the elements, then print the decimal value
 
@@ -54,7 +51,6 @@ def chksum_gen (hex_lst):
     bin_sum5.remove("b")
     bin_sum5.remove("0")
     print("the binary value is : ", bin_sum5)
-
 
 #change each value in the list
 
