@@ -39,6 +39,12 @@ print ("hex_list is : ", hex_list)
 checksum_short = checksum[2:4]
 print ("checksum is : ", checksum_short)
 
+# convert the ascii value of checksum to two hex values
+checksum_1 = hex(int(checksum[2]))
+print ("checksum_1 is :", checksum_1)
+checksum_2 = hex(int(checksum[3]))
+print ("checksum_2 is :", checksum_2)                 
+
 # append checksum and 03 to the end of the list
 
 hex_list.append(checksum_short)

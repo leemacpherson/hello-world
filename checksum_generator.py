@@ -14,23 +14,22 @@ def chksum_gen (hex_lst):
 
 #declare the list that will hold the decimal equivalent of all of the hex values
     dec_lst = [25]
+    dec_val = 0
     
 #method 1 to convert each string in the hex_lst list to integers
 
-    dec_lst = [int(i) for i in hex_lst]
+    for i in range (len(hex_lst)):
+        dec_val = int(hex_lst[i], 16)
+        print ("decimal_value is :", dec_val)
+        dec_lst.append(dec_val)
 
     print ("the list of decimal equivalents is : ", dec_lst)
-
-#method 2 to convert each string in the hex_lst list to integers
-
-    hex_value = 0
-    
 
 # calculate the sum of all of the elements, then print the decimal value
 
     print(" all of the values have been entered")
     dec_sum = sum(dec_lst)
-    print("the sum is: ", dec_sum)
+    print("the decimal sum is: ", dec_sum)
 
 # convert the decimal value to a binary value
     bin_sum = bin(dec_sum)
